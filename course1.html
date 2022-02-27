@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>Course 1</title>
+</head>
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>Pineapple<br>Protocol</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Dashboard</a>
+      <a href="all-courses.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Courses</a> 
+      <a href="test.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Revision Test</a> 
+      <a href="portal.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trading Portal</a> 
+    </div>
+  </nav>
+
+      
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+      <div class="w3-container" id="services" style="margin-top:50px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Course 1: Reading Charts</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <h3>What is a Stock Chart</h3>
+        <p>
+            A stock chart is a set of information on the stock of a particular company that generally displays details about trading volume, price changes, historical lows and highs, dividends, current trading price, and other company-related financial details.
+            
+            Knowing how to read stock charts is one of the best ways to understand the performance of a particular company’s stock.
+            
+            Stock charts also help you to know how a stock is likely to perform and what is going on in the broader market.</p>
+
+
+            <div id="trading_widget">
+                <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                  <div id="tradingview_4e3de"></div>
+                  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                  <script type="text/javascript">
+                  new TradingView.widget(
+                  {
+                  "width": 980,
+                  "height": 610,
+                  "symbol": "NASDAQ:AAPL",
+                  "interval": "D",
+                  "timezone": "Etc/UTC",
+                  "theme": "dark",
+                  "style": "1",
+                  "locale": "en",
+                  "toolbar_bg": "#f1f3f6",
+                  "enable_publishing": false,
+                  "allow_symbol_change": true,
+                  "container_id": "tradingview_4e3de"
+              }
+                  );
+                  </script>
+              </div>
+              <!-- TradingView Widget END -->
+
+            <p>The above image is more or less what a standard stock chart will look like when you first open your brokers trading platform. You’ll have basic quoting data, either a line or candlestick chart, volume, and most of the time price will be on the right side of the chart along the y-axis with time running along the x-axis.
+
+                This is a daily candlestick chart of Apple going back a few months. Each candle represents a days worth of price action. You’ll also notice the teal-blue line running through the candles. This is a moving average that takes past pricing data and averages it over a certain period time, depending on your settings.
+                
+                The green vertical bars on the bottom of the chart represent volume, or the amount of shares traded during a day. You can see some days are more active than others and will have higher volume bars.</p>
+                
+            <p>
+                <ul>
+                    <li>                Ticker – this is the symbol that the company obtained when filing to go public and is what is used when pulling up charts on a trading platform. No two companies can have the same ticker. In this example AAPL is the ticker used for the company Apple Inc.
+                    </li>
+                    <li>                Timeframe – daily means this chart is showing price action that occurred over a full day of trading. So each candle is one days worth of data. This can be customized to almost any timeframe with the 1,5 and 15 minute timeframes being the most popular for day trading and the 30, 60, daily and weekly the most popular for swing trading.
+                    </li>
+                    <li>
+                        Exchange – Apple trades on the NASDAQ but if you were looking at a company like General Electric it would show NYSE since they trade on the New York Stock Exchange. The NASDAQ and NYSE are the most common exchanges.
+                    </li>
+                </ul></p>
+            </div>
+        
+
+    </div>
+    <div><p>Moving on to <a href="course2.html">Course 2</a></p></div></div>
+</body>
+</html>
